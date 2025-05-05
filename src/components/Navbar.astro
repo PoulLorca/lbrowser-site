@@ -1,0 +1,41 @@
+---
+import { Button } from "@/components/ui/button";
+---
+
+<header class="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="container flex h-16 items-center justify-between px-4">
+      <div class="flex items-center">
+        <a href="#" class="flex items-center space-x-2">
+          <img src="/internet service.svg" alt="Logo" class="h-8 w-8" />
+          <span class="inline-block font-bold">Mi Sitio</span>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex items-center justify-center flex-1">
+        <div class="flex items-center space-x-4">
+          <Button variant="ghost" asChild>
+            <a href="#about">About</a>
+          </Button>
+          <Button variant="ghost" asChild>
+            <a href="#news">News</a>
+          </Button>
+          <Button variant="ghost" asChild>
+            <a href="#get-involved">Get Involved</a>
+          </Button>
+          <Button variant="ghost" asChild>
+            <a href="#sponsors">Sponsors</a>
+          </Button>
+          <Button variant="ghost" asChild>
+            <a href="#faq">FAQ</a>
+          </Button>
+        </div>        
+      </nav>
+
+      <div class="hidden md:block">
+        <Button variant="default">
+          <a href="#donate">Donate</a>
+        </Button>
+      </div>
+    </div>
+  </header>
+  

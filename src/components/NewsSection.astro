@@ -1,0 +1,29 @@
+---
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+---
+
+<section id="news" class="py-20 bg-muted/50">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold tracking-tight mb-8">News</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[1, 2, 3].map((item) => (
+        <Card>
+          <CardHeader>
+            <CardTitle>Noticia {item}</CardTitle>
+            <CardDescription>Publicado el {new Date().toLocaleDateString()}</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p class="text-muted-foreground">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia,
+              nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Button variant="outline" size="sm">Leer más</Button>
+          </CardFooter>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+---
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+---
+
+<section id="get-involved" class="py-20">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold tracking-tight mb-8">Get Involved</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <Card>
+        <CardHeader>
+          <CardTitle>Voluntariado</CardTitle>
+          <CardDescription>Únete a nuestro equipo de voluntarios</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p class="text-muted-foreground mb-4">
+            Ayúdanos a hacer la diferencia en la comunidad. Tenemos varias oportunidades para voluntarios.
+          </p>
+          <Button>Aplicar ahora</Button>
+        </CardContent>
+      </Card>
+      
+      <Card>
+        <CardHeader>
+          <CardTitle>Donaciones</CardTitle>
+          <CardDescription>Apoya nuestras iniciativas</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p class="text-muted-foreground mb-4">
+            Tu contribución nos ayuda a continuar con nuestros proyectos y llegar a más personas.
+          </p>
+          <Button>Donar</Button>
+        </CardContent>
+      </Card>
+      
+      <Card>
+        <CardHeader>
+          <CardTitle>Colaboraciones</CardTitle>
+          <CardDescription>Trabaja con nosotros</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p class="text-muted-foreground mb-4">
+            Buscamos organizaciones y empresas para colaborar en proyectos conjuntos.
+          </p>
+          <Button>Contactar</Button>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>

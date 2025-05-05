@@ -1,29 +1,29 @@
 ---
 import '../styles/global.css';
 // Component Imports
-import { Button } from "@/components/ui/button"
+import Layout from '../layouts/main.astro';
+import Navbar from '@/components/Navbar.astro';
+import AboutSection from '@/components/AboutSection.astro';
+import NewsSection from '@/components/NewsSection.astro';
+import GetInvolvedSection from '@/components/GetInvolvedSection.astro';
+import SponsorsSection from '@/components/SponsorsSection.astro';
+import FaqSection from '@/components/FaqSection.astro';
+import HeroSection from '@/components/HeroSection.astro';
+
 
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/internet service.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Lbrowser</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Button Shadcn</Button>
-		</div>
-	</body>
-</html>
+<Layout title="Mi Aplicación de Una Página">
+	<Navbar />
+	<main class="container mx-auto px-4">
+	  <HeroSection />
+	  <AboutSection />
+	  <NewsSection />
+	  <GetInvolvedSection />
+	  <SponsorsSection />
+	  <FaqSection />
+	</main>
+  </Layout>
