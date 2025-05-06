@@ -1,5 +1,8 @@
 ---
 import { Button } from '@/components/ui/button'
+
+const currentPath = Astro.url.pathname;
+const isHomePage = currentPath === '/' || currentPath === '/index.html';
 ---
 
 <footer class="bg-muted/10 pt-12 pb-8">
@@ -38,11 +41,11 @@ import { Button } from '@/components/ui/button'
         
         <nav>
           <ul class="flex flex-wrap gap-4 text-muted-foreground justify-center sm:justify-end">
-            <li><a href="#about">About</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#get-involved">Get Involved</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href={isHomePage ? "#about" : "/#about"}>About</a></li>
+            <li><a href={isHomePage ? "#news" : "/#news"}>News</a></li>
+            <li><a href={isHomePage ? "#get-involved" : "/#get-involved"}>Get Involved</a></li>
+            <li><a href={isHomePage ? "#sponsors" : "/#sponsors"}>Sponsors</a></li>
+            <li><a href={isHomePage ? "#faq" : "/#faq"}>FAQ</a></li>
             <li><a href="mailto:contact@lbrowser.com">Contact Us</a></li>
           </ul>
         </nav>
