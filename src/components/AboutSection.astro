@@ -1,36 +1,83 @@
 ---
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 ---
 
-<section id="about" class="py-20">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold tracking-tight mb-8">About</h2>
-    <Card>
-      <CardHeader>
-        <CardTitle>Nuestra Misión</CardTitle>
-        <CardDescription>Conoce más sobre nosotros</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p class="text-muted-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, 
-          nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia,
-          nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.
+<section id="about" class="py-20 container mx-auto px-4">
+  <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <div class="order-2 md:order-1 w-full md:w-1/2 mt-8 md:mt-0">
+      <img
+        src="/browser-about.svg"
+        alt="Browser feature illustration"
+        class="w-full h-auto rounded-lg shadow-lg"
+      />
+    </div>
+
+    <div class="order-1 md:order-2 w-full md:w-1/2">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+        About LBrowser
+      </h2>
+
+      <div class="space-y-4 text-lg text-muted-foreground">
+        <p>
+          LBrowser is designed from the ground up to protect your privacy while delivering 
+          exceptional performance. Unlike conventional browsers that track your every move, 
+          we believe your data belongs to you and only you.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <div class="flex flex-col space-y-2">
-            <h3 class="font-medium">Nuestra Visión</h3>
-            <p class="text-sm text-muted-foreground">
-              Crear un impacto positivo en la comunidad a través de nuestras iniciativas.
-            </p>
-          </div>
-          <div class="flex flex-col space-y-2">
-            <h3 class="font-medium">Nuestros Valores</h3>
-            <p class="text-sm text-muted-foreground">
-              Integridad, colaboración, innovación y compromiso con la excelencia.
-            </p>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+        
+        <p>
+          Built on open-source principles, our browser blocks trackers automatically, prevents 
+          fingerprinting, and encrypts your connection whenever possible. The intuitive interface 
+          puts you in control without sacrificing the features you love.
+        </p>
+        
+        <p>
+          Whether you're a privacy advocate, a developer, or just someone who wants a faster 
+          browsing experience, LBrowser offers the tools and technology to make the web work 
+          for you, not against you.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-16">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
+    Features
+  </h2>
+  <div class="flex flex-col md:flex-row gap-8">
+    <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
+      <img
+        src="/icons/privacy.svg"
+        alt="Privacy Icon"
+        class="mx-auto mb-4 w-12 h-12"
+      />
+      <h3 class="text-xl font-semibold mb-2">Total Privacy</h3>
+      <p class="text-muted-foreground">
+        Protect your data with built-in ad and tracker blocking, ensuring your online activity remains private.
+      </p>
+    </div>
+
+    <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
+      <img
+        src="/icons/speed.svg"
+        alt="Speed Icon"
+        class="mx-auto mb-4 w-12 h-12"
+      />
+      <h3 class="text-xl font-semibold mb-2">Lightning Speed</h3>
+      <p class="text-muted-foreground">
+        Experience faster browsing with optimized performance and reduced load times.
+      </p>
+    </div>
+
+    <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
+      <img
+        src="/icons/customization.svg"
+        alt="Customization Icon"
+        class="mx-auto mb-4 w-12 h-12"
+      />
+      <h3 class="text-xl font-semibold mb-2">Customizable Experience</h3>
+      <p class="text-muted-foreground">
+        Tailor your browsing experience with a variety of themes, extensions, and settings to suit your needs.
+      </p>
+    </div>
   </div>
 </section>
