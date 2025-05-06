@@ -1,5 +1,11 @@
 ---
 import { Card, CardContent } from "@/components/ui/card";
+const sponsors = [
+  { name: "Sponsor 1", logo: "/images/sponsor1.png" },
+  { name: "Sponsor 2", logo: "/images/sponsor2.png" },
+  { name: "Sponsor 3", logo: "/images/sponsor3.png" },
+  { name: "Sponsor 4", logo: "/images/sponsor4.png" },
+];
 ---
 
 <section id="sponsors" class="py-20 bg-muted/50">
@@ -9,17 +15,38 @@ import { Card, CardContent } from "@/components/ui/card";
       <CardContent className="p-6">
         <div class="text-center mb-8">
           <p class="text-muted-foreground">
-            Agradecemos a nuestros patrocinadores por su continuo apoyo
+            We are grateful to our sponsors for their generous support.
           </p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((sponsor) => (
+          {sponsors.map((sponsor) => (
             <div class="bg-muted aspect-video w-full max-w-[200px] rounded-lg flex items-center justify-center">
-              <span class="text-muted-foreground">Sponsor {sponsor}</span>
+              <img src={sponsor.logo} alt={sponsor.name} class="w-full h-auto" />
             </div>
-          ))}
+          ))}          
         </div>
       </CardContent>
     </Card>
+  </div>
+</section>
+
+<section class="bg-purple-700 text-white px-6 py-12 mt-10 rounded-md">
+  <h3 class="text-2xl md:text-3xl font-bold mb-4">Become a Lbrowser Supporter</h3>
+  <p class="mb-6">
+    Lbrowser is a community-driven project, and your support helps us keep it alive and thriving.
+    By becoming a supporter, you can help us cover hosting costs, development expenses, and more. 
+    Every contribution, no matter how small, makes a difference.
+  </p>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+    <button class="bg-white text-purple-700 px-6 py-3 rounded hover:bg-white/90">
+      <a href="https://ko-fi.com/" target="_blank" rel="noopener noreferrer">
+        Support via Ko-Fi
+      </a>
+    </button>
+    <button class="border border-white text-white px-6 py-3 rounded hover:bg-white/20">
+      <a href="#contact" rel="noopener noreferrer">
+        Contact for Sponsorship
+      </a>
+    </button>
   </div>
 </section>
