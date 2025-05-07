@@ -1,0 +1,30 @@
+---
+import Navbar from "@/components/Navbar.astro";
+import FooterSection from "@/components/FooterSection.astro";
+const { frontmatter } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <title>{frontmatter.title || 'Docs'}</title>
+    <script is:inline>            
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+  </head>
+  <body class="bg-background text-foreground antialiased min-h-screen">
+    <Navbar />        
+
+    
+    <main class="container mx-auto px-4 my-8 prose lg:prose-xl dark:prose-invert">
+        <slot />
+    </main> 
+
+    <FooterSection />
+  </body>
+</html>
