@@ -13,26 +13,23 @@
 
     <div class="order-1 md:order-2 w-full md:w-1/2">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-        About LBrowser
+        About LBrowser: Your Submarine for the Web
       </h2>
 
       <div class="space-y-4 text-lg text-muted-foreground">
         <p>
-          LBrowser is designed from the ground up to protect your privacy while delivering 
-          exceptional performance. Unlike conventional browsers that track your every move, 
-          we believe your data belongs to you and only you.
+          Meet LBrowser (Little Browser) – a compact, open-source browser built with a singular focus: empowering you to explore the web safely and without surveillance. Think of it as your small, secure submarine, ready to navigate not just the surface web, but also hidden networks like Tor, I2P, Zeronet, and Hyphanet.
         </p>
-        
+
         <p>
-          Built on open-source principles, our browser blocks trackers automatically, prevents 
-          fingerprinting, and encrypts your connection whenever possible. The intuitive interface 
-          puts you in control without sacrificing the features you love.
+            Unlike large, data-hungry browsers, LBrowser respects your privacy. It uses the reliable Chromium rendering engine via a webview but fundamentally differs by having <strong class="text-foreground">no interest in your data</strong>. We don't sell, store, or track your Browse activity – ever.
         </p>
-        
+
         <p>
-          Whether you're a privacy advocate, a developer, or just someone who wants a faster 
-          browsing experience, LBrowser offers the tools and technology to make the web work 
-          for you, not against you.
+            LBrowser makes accessing alternative web networks easy. With <strong class="text-foreground">integrated Docker container support</strong>, you can activate "web modes" for networks like Tor or I2P with a simple click, abstracting away complex configurations (Docker needs to be running on your system). It's about making these powerful tools accessible to everyone.
+        </p>
+        <p>
+            This project is built and maintained by me, in my free time, driven by the belief in a more open and private web. It's currently available for Linux and Windows, with plans for more platforms in the future.
         </p>
       </div>
     </div>
@@ -41,43 +38,55 @@
 
 <section class="pt-16">
   <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
-    Features
+    Key Features
   </h2>
   <div class="flex flex-col md:flex-row gap-8">
+    <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
+      <img
+        src="/icons/network.svg"
+        alt="Network Icon"
+        class="mx-auto mb-4 w-12 h-12"
+      />
+      <h3 class="text-xl text-primary font-semibold mb-2">Seamless Network Access</h3>
+      <p class="text-secondary">
+        Effortlessly switch between the standard web and networks like Tor, I2P, Zeronet, and Hyphanet via integrated Docker modes. Explore more of the internet without configuration headaches.
+      </p>
+    </div>
+
     <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
       <img
         src="/icons/privacy.svg"
         alt="Privacy Icon"
         class="mx-auto mb-4 w-12 h-12"
       />
-      <h3 class="text-xl font-semibold mb-2">Total Privacy</h3>
-      <p class="text-muted-foreground">
-        Protect your data with built-in ad and tracker blocking, ensuring your online activity remains private.
+      <h3 class="text-xl text-primary font-semibold mb-2">Built-in Privacy</h3>
+      <p class="text-secondary">
+        Navigate confidently with zero data collection, tracking, or selling.
       </p>
     </div>
 
     <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
       <img
-        src="/icons/speed.svg"
-        alt="Speed Icon"
+        src="/icons/lightweight.svg"
+        alt="Lightweight Icon"
         class="mx-auto mb-4 w-12 h-12"
       />
-      <h3 class="text-xl font-semibold mb-2">Lightning Speed</h3>
-      <p class="text-muted-foreground">
-        Experience faster browsing with optimized performance and reduced load times.
+      <h3 class="text-xl text-primary font-semibold mb-2">Lightweight & Open Source</h3>
+      <p class="text-secondary">
+        LBrowser is designed to be small and efficient. Its open-source nature ensures transparency and allows the community to contribute to its development and security.
       </p>
     </div>
 
     <div class="flex-1 bg-white p-6 text-center rounded shadow-lg">
       <img
-        src="/icons/customization.svg"
-        alt="Customization Icon"
-        class="mx-auto mb-4 w-12 h-12"
-      />
-      <h3 class="text-xl font-semibold mb-2">Customizable Experience</h3>
-      <p class="text-muted-foreground">
-        Tailor your browsing experience with a variety of themes, extensions, and settings to suit your needs.
-      </p>
-    </div>
+       src="/icons/media.svg" 
+       alt="Media Icon"
+       class="mx-auto mb-4 w-12 h-12"
+     />
+     <h3 class="text-xl text-primary font-semibold mb-2">Media Extraction Mode</h3>
+     <p class="text-secondary">
+       Easily extract and download all multimedia content from any webpage with the dedicated Media Source mode.
+     </p>
+   </div>
   </div>
 </section>

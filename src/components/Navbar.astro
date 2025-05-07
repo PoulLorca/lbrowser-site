@@ -9,8 +9,8 @@ const isHomePage = currentPath === "/";
     <div class="container flex h-16 items-center justify-between px-4">
       <div class="flex items-center">
         <a href="/" class="flex items-center space-x-2">
-          <img src="/internet service.svg" alt="Logo" class="h-8 w-8" />
-          <span class="inline-block font-bold">Mi Sitio</span>
+          <img src="/submarine.svg" alt="Logo" class="h-12 w-12" />
+          <span class="inline-block font-bold">LBrowser</span>
         </a>
       </div>
 
@@ -35,7 +35,7 @@ const isHomePage = currentPath === "/";
       </nav>
 
       <div class="hidden md:block">
-        <Button variant="default">
+        <Button variant="default" className="rounded-full">
           <a href={isHomePage ? "#donate" : "/#donate"}>Donate</a>
         </Button>
       </div>

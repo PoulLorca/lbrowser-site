@@ -10,56 +10,77 @@
       <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
                 
         <div class="hidden md:block text-primary shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path 
-              stroke-linecap="round" 
-              stroke-linejoin="round" 
-              stroke-width="2"
-              d="M8 10h.01M12 14v.01M12 2a10 10 0 104.442 18.938M12 6.25v1.5m0 4.5v1.5"
-            />
-          </svg>
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
         </div>
                 
         <div>
-          <h3 class="text-lg font-semibold">What is LBrowser?</h3>
-          <p class="text-muted-foreground mt-2">
-            LBrowser is a privacy-focused web browser designed to protect your data and enhance your browsing experience.
-            It blocks trackers, ads, and unwanted content while providing a fast and user-friendly interface.
+          <h3 class="text-lg text-primary font-semibold">What is LBrowser?</h3>
+          <p class="text-secondary mt-2">
+            LBrowser (Little Browser) is a free, open-source, lightweight web browser focused on user privacy and making it easy to access various web networks like the standard web, Tor, I2P, Zeronet, and Hyphanet via integrated Docker container modes. It does not track, store, or sell your data.
           </p>
         </div>
       </li>
 
       <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
         <div class="hidden md:block text-primary shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8 10h.01M12 14v.01M12 2a10 10 0 104.442 18.938M12 6.25v1.5m0 4.5v1.5"
-            />
-          </svg>
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
         </div>
         <div>
-          <h3 class="text-lg font-semibold">How does LBrowser protect my privacy?</h3>
-          <p class="text-muted-foreground mt-2">
-            LBrowser employs advanced privacy features such as tracker blocking, ad filtering, and encrypted connections.
-            It also minimizes data collection and does not share your browsing history with third parties.
-          </p>
+          <h3 class="text-lg text-primary font-semibold">How does LBrowser protect my privacy?</h3>
+          <p class="text-secondary mt-2">
+            Privacy is a core principle. LBrowser does not collect or sell user data. It includes built-in features like an ad and tracker blocker. When using network modes like Tor or I2P, your connection is routed through those networks for anonymity. The Docker images used are curated and being reviewed for maximum security.
+          </p>          
         </div>
       </li>
+
+      <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
+        <div class="hidden md:block text-primary shrink-0">
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
+        </div>
+        <div>
+          <h3 class="text-lg text-primary font-semibold">How do the "web modes" for Tor, I2P, etc. work?</h3>
+          <p class="text-secondary mt-2">
+            LBrowser integrates with Docker containers to provide easy access to these networks. When you enable a mode (e.g., Tor Mode), LBrowser uses a pre-configured Docker image to route your Browse through that network. You need to have Docker installed and running on your system, but LBrowser handles the specific container setup for each mode.
+          </p>          
+        </div>
+      </li>
+
+      <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
+        <div class="hidden md:block text-primary shrink-0">
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
+        </div>
+        <div>
+          <h3 class="text-lg text-primary font-semibold">Do I need Docker to use LBrowser?</h3>
+            <p class="text-secondary mt-2">
+            To utilize the special "web modes" for networks like Tor, I2P, Zeronet, or Hyphanet, you will need to have Docker installed and running on your system. The core functionality of LBrowser as a standard privacy-focused browser will work without Docker, but the unique network modes are dependent on it.
+            </p>          
+        </div>
+      </li>
+
+      <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
+        <div class="hidden md:block text-primary shrink-0">
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
+        </div>
+        <div>
+          <h3 class="text-lg text-primary font-semibold">What platforms is LBrowser available on?</h3>
+            <p class="text-secondary mt-2">
+              Currently, compiled versions of LBrowser are available for Linux and Windows. We have plans to expand to macOS and potentially mobile platforms in the future.
+            </p>          
+        </div>
+      </li>
+
+      <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
+        <div class="hidden md:block text-primary shrink-0">
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
+        </div>
+        <div>
+          <h3 class="text-lg text-primary font-semibold">How does the Ko-fi sponsorship / commission system work?</h3>
+            <p class="text-secondary mt-2">
+              LBrowser is free and open-source, maintained by me. If you'd like to help guide development and prioritize features, you can sponsor "commissions" (feature requests or ideas) through Ko-fi. The community can contribute towards specific commissions, and the one with the highest total sponsorship will become a priority for implementation in an upcoming release, alongside general development and maintenance.
+            </p>          
+        </div>
+      </li>
+
     </ul>
   </div>
 </section>
