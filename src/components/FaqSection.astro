@@ -26,9 +26,21 @@
           <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
         </div>
         <div>
+          <h3 class="text-lg text-primary font-semibold">Why LBrowser? (And what about the search bar?)</h3>
+            <p class="text-secondary mt-2">
+              LBrowser exists because I believe in an open web where everyone can explore without restrictions. While many browsers increasingly focus on identifying users and leveraging their data, LBrowser aims to simply facilitate your ability to find what you're looking for, wherever it is. What you explore is your business, not the browser's. This is why LBrowser prioritizes easy integration with censorship-resistant networks via Docker. Adhering to this philosophy, LBrowser does not have a default search engine tied to the address bar – entering text there will not automatically perform a search. While it opens on Startpage, this is just a starting point, not a forced default search provider. While we champion web freedom, we are not complicit in or promoters of any activity that harms others or involves illicit data practices. An open web requires responsible consumption and promotion. Ultimately, I am not responsible for the use you make of the browser; that is always your own matter.
+            </p>          
+        </div>
+      </li>
+
+      <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
+        <div class="hidden md:block text-primary shrink-0">
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
+        </div>
+        <div>
           <h3 class="text-lg text-primary font-semibold">How does LBrowser protect my privacy?</h3>
           <p class="text-secondary mt-2">
-            Privacy is a core principle. LBrowser does not collect or sell user data. It includes built-in features like an ad and tracker blocker. When using network modes like Tor or I2P, your connection is routed through those networks for anonymity. The Docker images used are curated and being reviewed for maximum security.
+            Privacy is a core principle. LBrowser does not collect or sell user data. It includes built-in features like an ad blocker. When using network modes like Tor or I2P, your connection is routed through those networks for anonymity. The Docker images used are curated and being reviewed for maximum security.
           </p>          
         </div>
       </li>
@@ -62,9 +74,21 @@
           <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
         </div>
         <div>
-          <h3 class="text-lg text-primary font-semibold">What platforms is LBrowser available on?</h3>
+          <h3 class="text-lg text-primary font-semibold">How does the built-in ad-free mode work?</h3>
             <p class="text-secondary mt-2">
-              Currently, compiled versions of LBrowser are available for Linux and Windows. We have plans to expand to macOS and potentially mobile platforms in the future.
+              The integrated ad-free mode in LBrowser works by consulting public databases of known ad spaces. It then simply hides the visual elements on the page that are dedicated to displaying advertisements. This means the site still serves the ad request (they don't lose potential revenue), but you simply don't see it. This method respects HTTP requests and avoids interfering with the underlying site communication, ensuring your Browse activity and the sites you visit are not directly tracked or altered by the ad-blocking process itself.
+            </p>          
+        </div>
+      </li>
+
+            <li class="bg-white rounded shadow p-4 md:flex md:items-start md:space-x-4">
+        <div class="hidden md:block text-primary shrink-0">
+          <img src="/icons/compass.svg" class="h-6 w-6" alt="Compass" />
+        </div>
+        <div>
+          <h3 class="text-lg text-primary font-semibold">What is LBrowser's business model?</h3>
+            <p class="text-secondary mt-2">
+              LBrowser is an independent, open-source project with no traditional business model. It is sustained solely by voluntary donations and community-sponsored feature "commissions" via Ko-fi. The core philosophy of this project dictates that we will <strong class="text-[#ff0000] font-bold">never</strong> sell, share, or use your data for training AI models or any other purpose. Your privacy is paramount and not a commodity. LBrowser uses the open-source Chromium rendering engine, which itself is free from user tracking or data selling mechanisms.
             </p>          
         </div>
       </li>
