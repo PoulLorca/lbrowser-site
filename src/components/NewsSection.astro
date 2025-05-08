@@ -28,9 +28,9 @@ const newsItems = [
   <div class="container mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">News</h2>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-8">
       {newsItems.map(item => (
-        <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
+        <div class="bg-card rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
           <a href={item.url} class="block">
             <img 
               src={item.image} 
@@ -44,7 +44,7 @@ const newsItems = [
               <h3 class="text-xl font-semibold mb-2 line-clamp-2">
                 {item.title}
               </h3>
-              <p class="text-muted-foreground text-sm line-clamp-3">
+              <p class="text-foreground/80 text-sm line-clamp-3">
                 {item.summary}
               </p>
             </div>
