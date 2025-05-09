@@ -5,14 +5,74 @@ import Layout from '../layouts/main.astro';
 import Navbar from '@/components/Navbar.astro';
 import FooterSection from '@/components/FooterSection.astro';
 import SponsorsSection from '@/components/SponsorsSection.astro';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 ---
 
-<Layout title="LBrowser - Go Further!">
-	<Navbar />
-	<main class="container mx-auto px-4">
-        <h1>Hello World</h1>
-        <h2>This is the download page</h2>
-        <SponsorsSection />
+<Layout title="LBrowser - Go Further! Downloads">
+    <Navbar />
+    <main class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Download LBrowser</h1>
+            <p class="text-xl text-muted-foreground">
+                Get the latest version of LBrowser for your operating system.
+                Simply download, extract, and start exploring. No installation required!
+            </p>
+        </header>
+
+        <section id="download-options" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            <Card className="flex flex-col"> 
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3">                         
+                         Windows (x64)
+                    </CardTitle>
+                    <CardDescription>For Windows 10 / 11 - Portable ZIP</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow"> 
+                    <p class="text-muted-foreground">
+                        Download the ZIP archive, extract its contents, and run the executable. Includes all necessary dependencies.
+                        Refer to the documentation for details on hardware acceleration compatibility.
+                    </p>
+                     
+                </CardContent>
+                <CardFooter>
+                    <a href="YOUR_WINDOWS_ZIP_RELEASE_LINK" download class="w-full"> 
+                        <Button size="lg" className="w-full">Download for Windows</Button>
+                    </a>
+                </CardFooter>
+            </Card>
+            
+            <Card className="flex flex-col"> 
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3">                         
+                         Linux (x64)
+                    </CardTitle>
+                    <CardDescription>Portable ZIP / TGZ Package</CardDescription> {/* Or .tar.gz */}
+                </CardHeader>
+                <CardContent className="flex-grow"> 
+                    <p class="text-muted-foreground">
+                        Download and extract the archive. Make the LBrowser file executable and run it from the root directory. No installation needed.
+                    </p>                     
+                </CardContent>
+                <CardFooter>
+                     <a href="YOUR_LINUX_ZIP_TGZ_RELEASE_LINK" download class="w-full"> {/* Added w-full to make button full width */}
+                        <Button size="lg" className="w-full">Download for Linux</Button>
+                    </a>
+                </CardFooter>
+            </Card>
+
+        </section>
+        
+        <section class="text-center mt-12 text-muted-foreground">
+            <p>
+                For detailed instructions on running LBrowser, troubleshooting, or building from source,
+                please visit the <a href="/docs" class="text-primary hover:underline">LBrowser Documentation</a>.
+            </p>
+        </section>
+
+
+        <SponsorsSection /> 
         <FooterSection />
-    </main>    
+    </main>
 </Layout>

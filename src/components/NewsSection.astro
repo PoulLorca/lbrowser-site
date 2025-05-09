@@ -1,56 +1,52 @@
 ---
 const newsItems = [
   {
-    image: '/images/news1.jpg',
-    tag: 'Release',
-    title: 'Lbrowser 1.0 Released',
-    summary: 'Lbrowser 1.0 is now available with new features and improvements.',
-    url: '/posts/new-1/',
+    image: "/post/coding.svg",
+    tag: "Release",
+    title: "Lbrowser 1.0 Released",
+    summary:
+      "LBrowser-1.0-SNAPSHOT (PRE) is now available with new features and improvements.",
+    url: "/posts/new-1/",
   },
-  {
-    image: '/images/news2.jpg',
-    tag: 'Community',
-    title: 'Join our Community',
-    summary: 'Become a part of the Lbrowser community and contribute to our development.',
-    url: '/posts/new-2/',
-  },
-  {
-    image: '/images/news3.jpg',
-    tag: 'Tutorial',
-    title: 'Lbrowser Tutorial',
-    summary: 'Learn how to use Lbrowser effectively with our comprehensive tutorial.',
-    url: '/posts/new-3/',
-  }
 ];
 ---
 
 <section id="news" class="py-20 bg-muted/50">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">News</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-8">
-      {newsItems.map(item => (
-        <div class="bg-card rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
-          <a href={item.url} class="block">
-            <img 
-              src={item.image} 
-              alt={item.title}
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <span class="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-3">
-                {item.tag}
-              </span>
-              <h3 class="text-xl font-semibold mb-2 line-clamp-2">
-                {item.title}
-              </h3>
-              <p class="text-foreground/80 text-sm line-clamp-3">
-                {item.summary}
-              </p>
-            </div>
-          </a>
-        </div>
-      ))}
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">
+      News
+    </h2>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-8"
+    >
+      {
+        newsItems.map((item) => (
+          <div class="bg-card rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
+            <a href={item.url} class="block">
+              <div class="flex justify-center bg-muted/10">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  class="w-30 h-30 object-cover"
+                />
+              </div>
+              <div class="p-6">
+                <span class="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-3">
+                  {item.tag}
+                </span>
+                <h3 class="text-xl font-semibold mb-2 line-clamp-2">
+                  {item.title}
+                </h3>
+                <p class="text-foreground/80 text-sm line-clamp-3">
+                  {item.summary}
+                </p>
+              </div>
+            </a>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
