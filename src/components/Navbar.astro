@@ -2,44 +2,44 @@
 import { Button } from "@/components/ui/button";
 
 const currentPath = Astro.url.pathname;
-const isHomePage = currentPath === "/";
+const isHomePage = currentPath === "/" || currentPath === "/lbrowser-site"|| currentPath === "/lbrowser-site/" 
 ---
 
 <header class="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div class="container flex h-16 items-center justify-between px-4">
       <div class="flex items-center">
-        <a href="/" class="flex items-center space-x-2">
-          <img src="/submarine.svg" alt="Logo" class="h-12 w-12" />
-          <span class="inline-block font-bold">LBrowser</span>
+        <a href="/lbrowser-site/" class="flex items-center space-x-2">
+          <img src="/lbrowser-site/submarine.svg" alt="Logo" class="h-12 w-12" />
+          <span class="inline-block font-bold">LBrowser</span>  
         </a>
       </div>
 
       <nav class="hidden md:flex items-center justify-center flex-1">
         <div class="flex items-center space-x-4">
           <Button variant="ghost" asChild>
-            <a href={isHomePage ? "#about" : "/#about"}>About</a>
+            <a href={isHomePage ? "#about" : "/lbrowser-site/#about"}>About</a>
           </Button>
           <Button variant="ghost" asChild>
-            <a href={isHomePage ? "#news" : "/#news"}>News</a>
+            <a href={isHomePage ? "#news" : "/lbrowser-site/#news"}>News</a>
           </Button>
           <Button variant="ghost" asChild>
-            <a href={isHomePage ? "#get-involved" : "/#get-involved"}>Get Involved</a>
+            <a href={isHomePage ? "#get-involved" : "/lbrowser-site/#get-involved"}>Get Involved</a>
           </Button>
           <Button variant="ghost" asChild>
-            <a href={isHomePage ? "#sponsors" : "/#sponsors"}>Sponsors</a>
+            <a href={isHomePage ? "#sponsors" : "/lbrowser-site/#sponsors"}>Sponsors</a>
           </Button>
           <Button variant="ghost" asChild>
-            <a href={isHomePage ? "#faq" : "/#faq"}>FAQ</a>
+            <a href={isHomePage ? "#faq" : "/lbrowser-site/#faq"}>FAQ</a>
           </Button>
           <Button variant="ghost" asChild>
-            <a href='/docs/'>Docs</a>
+            <a href='/lbrowser-site/docs/'>Docs</a>
           </Button>
         </div>        
       </nav>
 
       <div class="hidden md:block">
         <Button variant="default" className="rounded-full">
-          <a href='/download'>Download</a>
+          <a href='/lbrowser-site/download'>Download</a>
         </Button>
       </div>
     </div>
