@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 
 const currentPath = Astro.url.pathname;
-const isHomePage = currentPath === "/" || currentPath === "/index.html";
+const isHomePage = currentPath === "/" || currentPath === "/lbrowser-site"|| currentPath === "/lbrowser-site/" 
 ---
 
 <footer class="bg-muted/10 pt-12 pb-8">
@@ -58,7 +58,7 @@ const isHomePage = currentPath === "/" || currentPath === "/index.html";
       class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4"
     >
       <div class="flex items-center space-x-2">
-        <img src="/internet service.svg" alt="LBrowser Logo" class="h-8 w-8" />
+        <img src="/lbrowser-site/internet service.svg" alt="LBrowser Logo" class="h-8 w-8" />
         <span class="text-lg font-semibold">LBrowser</span>
       </div>
 
@@ -66,18 +66,18 @@ const isHomePage = currentPath === "/" || currentPath === "/index.html";
         <ul
           class="flex flex-wrap gap-4 text-muted-foreground justify-center sm:justify-end"
         >
-          <li><a href={isHomePage ? "#about" : "/#about"}>About</a></li>
-          <li><a href={isHomePage ? "#news" : "/#news"}>News</a></li>
+          <li><a href={isHomePage ? "#about" : "/lbrowser-site/#about"}>About</a></li>
+          <li><a href={isHomePage ? "#news" : "/lbrowser-site/#news"}>News</a></li>
           <li>
-            <a href={isHomePage ? "#get-involved" : "/#get-involved"}
+            <a href={isHomePage ? "#get-involved" : "/lbrowser-site/#get-involved"}
               >Get Involved</a
             >
           </li>
           <li>
-            <a href={isHomePage ? "#sponsors" : "/#sponsors"}>Sponsors</a>
+            <a href={isHomePage ? "#sponsors" : "//lbrowser-site/#sponsors"}>Sponsors</a>
           </li>
-          <li><a href={isHomePage ? "#faq" : "/#faq"}>FAQ</a></li>
-          <li><a href="/docs/">Docs</a></li>
+          <li><a href={isHomePage ? "#faq" : "/lbrowser-site/#faq"}>FAQ</a></li>
+          <li><a href="/lbrowser-site/docs/">Docs</a></li>
           <li>
             <a href="mailto:lbrowser.umpire152@passmail.net">Contact Us</a>
           </li>
@@ -89,7 +89,7 @@ const isHomePage = currentPath === "/" || currentPath === "/index.html";
 
     <div class="flex justify-center space-x-4">
       <a href="https://github.com/PoulLorca/lbrowser" class="text-muted-foreground hover:text-primary">
-        <img src="/icons/github-mark-white.svg" class="h-8 w-8" alt="Github" />
+        <img src="/lbrowser-site/icons/github-mark-white.svg" class="h-8 w-8" alt="Github" />
       </a>      
   </div>
 </footer>
