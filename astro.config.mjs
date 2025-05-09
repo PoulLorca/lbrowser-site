@@ -8,6 +8,8 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://poullorca.github.io/',
+  base: 'lbrowser-site',
   vite: {
       plugins: [tailwindcss()]
     },
