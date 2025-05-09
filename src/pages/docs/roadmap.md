@@ -48,5 +48,5 @@ Currently, there are no community-sponsored features actively being commissioned
 If you have a feature idea you'd like to see prioritized, consider commissioning it via the [LBrowser Ko-fi page](https://ko-fi.com/lbrowser). Your contribution directly influences what gets built next after the core 1.0 stable release.
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">
-    <a href="/docs/contribute" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>    
+    <a href="/lbrowser-site/docs/contribute" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>    
 </div>

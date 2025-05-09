@@ -14,33 +14,33 @@ LBrowser is a lightweight, open-source browser committed to user privacy and mak
 
 ## Table of Contents
 
-* [Introduction](/docs/introduction)
-* [Understanding Network Modes](/docs/netmodes)
+* [Introduction](/lbrowser-site/docs/introduction)
+* [Understanding Network Modes](/lbrowser-site/docs/netmodes)
     * How It Works
     * Setting Up Network Modes    
-* [Other Modes](/docs/modes)  
+* [Other Modes](/lbrowser-site/docs/modes)  
     * The Ad-Free Mode
     * Media Source Mode
     * Session Isolation and History
-* [Deployment & Installation](/docs/install)    
+* [Deployment & Installation](/lbrowser-site/docs/install)    
     * Running from ZIP Files
     * Building from Source
-* [Reporting Issues](/docs/issues)
-* [Contribution & Sponsorship Model](/docs/sponsorship)
+* [Reporting Issues](/lbrowser-site/docs/issues)
+* [Contribution & Sponsorship Model](/lbrowser-site/docs/sponsorship)
     * Supporting via Ko-fi
     * Feature Commissions Explained
     * Alternative Sponsorship & Contact
-* [Ways to Contribute](/docs/contribute)
-* [Roadmap](/docs/roadmap)    
+* [Ways to Contribute](/lbrowser-site/docs/contribute)
+* [Roadmap](/lbrowser-site/docs/roadmap)    
     * Current version
     * Upcoming
     * Community-Sponsored Features (Commissions)
 ---
 
-We recommend starting with the [Introduction](/docs/introduction) to understand the project's vision, and then moving on to [Deployment & Installation](/docs/install) to get LBrowser running on your system.
+We recommend starting with the [Introduction](/lbrowser-site/docs/introduction) to understand the project's vision, and then moving on to [Deployment & Installation](/docs/install) to get LBrowser running on your system.
 
 Thank you for your interest in LBrowser!
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">    
-    <a href="/docs/introduction" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
+    <a href="/lbrowser-site/docs/introduction" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
 </div>

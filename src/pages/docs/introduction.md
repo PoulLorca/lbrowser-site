@@ -17,6 +17,6 @@ LBrowser is a lightweight, open-source project. This transparency ensures that a
 This documentation serves as your guide to understanding LBrowser's philosophy, features, how to get it running, and how you can contribute to its development and vision.
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">
-    <a href="/docs/" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
-    <a href="/docs/netmodes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
+    <a href="/lbrowser-site/docs/" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
+    <a href="/lbrowser-site/docs/netmodes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
 </div>

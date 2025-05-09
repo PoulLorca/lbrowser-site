@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
-title: Mi primer post de blog
+title: LBrowser-1.0-SNAPSHOT (PRE) is Now Available!
 pubDate: 2025-05-10
 author: Poul lorca
 tags:

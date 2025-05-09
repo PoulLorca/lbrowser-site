@@ -12,7 +12,7 @@ LBrowser is designed to be portable. The release packages for Linux and Windows 
 
 #### Windows (10/11 - 64-bit)
 
-1.  **Download:** Obtain the latest Windows `.zip` release from the [Download page](/download).
+1.  **Download:** Obtain the latest Windows `.zip` release from the [Download page](/lbrowser-site/download).
 2.  **Extract:** Unzip the downloaded file to any folder on your computer.
 3.  **Run:** Navigate to the extracted folder.
     * Typically, you can run `LBrowser.exe` located inside the `/bin` directory. This is the standard executable.
@@ -32,7 +32,7 @@ LBrowser is designed to be portable. The release packages for Linux and Windows 
 
 #### Linux (64-bit)
 
-1.  **Download:** Obtain the latest Linux `.zip` or `.tar.gz` release from the [Download page](/download).
+1.  **Download:** Obtain the latest Linux `.zip` or `.tar.gz` release from the [Download page](/lbrowser-site/download).
 2.  **Extract:** Unzip or extract the downloaded file to any folder on your computer.
 3.  **Run:** Navigate to the extracted root folder.
     * You might need to make the main executable file runnable. Open a terminal in the extracted folder and use the `chmod` command:
@@ -94,6 +94,6 @@ If you are running the project directly from an IDE (like IntelliJ IDEA) or via 
 ```
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">
-    <a href="/docs/modes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
-    <a href="/docs/issues" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
+    <a href="/lbrowser-site/docs/modes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
+    <a href="/lbrowser-site/docs/issues" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
 </div>

@@ -38,6 +38,6 @@ The Docker images for all current network modes combined should occupy a bit ove
 If you encounter issues with Network Modes, a common troubleshooting step is to remove the existing network mode containers and images via the Portainer interface and then re-run the **'Net Config'** process in LBrowser. This refreshes the setup with the latest configurations and potentially newer Docker images.
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">
-    <a href="/docs/introduction" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
-    <a href="/docs/modes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
+    <a href="/lbrowser-site/docs/introduction" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
+    <a href="/lbrowser-site/docs/modes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
 </div>

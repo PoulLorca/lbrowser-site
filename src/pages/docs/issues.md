@@ -39,6 +39,6 @@ Providing a detailed report with the information requested above significantly i
 Thank you for taking the time to report issues and help improve LBrowser!
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">
-    <a href="/docs/install" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
-    <a href="/docs/sponsorship" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
+    <a href="/lbrowser-site/docs/install" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
+    <a href="/lbrowser-site/docs/sponsorship" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
 </div>

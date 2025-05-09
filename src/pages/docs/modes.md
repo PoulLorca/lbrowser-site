@@ -32,6 +32,6 @@ Privacy extends to your Browse history and session data. LBrowser handles this w
 * **No Persistent Storage:** When you close LBrowser, all session data held in RAM is instantly cleared. Nothing related to your Browse session (history, visited pages, temporary navigation data) is stored persistently on your device's storage after the browser process ends.
 
 <div class="flex justify-between mt-8 pt-4 border-t border-border">
-    <a href="/docs/netmodes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
-    <a href="/docs/install" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
+    <a href="/lbrowser-site/docs/netmodes" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">← Previous Section</a>
+    <a href="/lbrowser-site/docs/install" class="px-4 py-2 border border-border rounded transition-colors duration-300 hover:bg-primary hover:text-white">Next Section →</a>
 </div>
