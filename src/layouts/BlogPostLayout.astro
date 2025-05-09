@@ -1,14 +1,14 @@
 ---
 import Navbar from "@/components/Navbar.astro";
 import FooterSection from "@/components/FooterSection.astro";
+import '../styles/global.css';
 const { frontmatter } = Astro.props;
 ---
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/lbrowser-site/submarine.svg" />
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="icon" type="image/svg+xml" href="/lbrowser-site/submarine.svg" />    
     <title>{frontmatter.title || 'Blog Post'}</title>
     <script is:inline>            
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
