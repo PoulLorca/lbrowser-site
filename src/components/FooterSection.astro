@@ -1,72 +1,117 @@
 ---
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 
 const currentPath = Astro.url.pathname;
-const isHomePage = currentPath === '/' || currentPath === '/index.html';
+const isHomePage = currentPath === "/" || currentPath === "/index.html";
 ---
 
 <footer class="bg-muted/10 pt-12 pb-8">
-    <div class="container mx-auto px-4">      
-      <div class="flex flex-col items-center mb-8">
-        <h2 class="text-xl font-bold mb-2 text-center">Sign up for our newsletter</h2>
-        <p class="text-muted-foreground mb-4 text-center">
-          We'll email you with updates about LBrowser.
-        </p>
-        <form class="w-full max-w-sm flex flex-col sm:flex-row gap-2 justify-center">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="flex-1 border border-muted-foreground/20 rounded px-3 py-2"
-          />
-          <Button
-            type="submit"
-            className="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90"
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center mb-8">
+      <h2 class="text-xl font-bold mb-2 text-center">
+        Sign up for our newsletter
+      </h2>
+      <p class="text-muted-foreground mb-4 text-center">
+        We'll email you with updates about LBrowser.
+      </p>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/lbrowser"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/lbrowser', 'popupwindow')"
+        class="w-full max-w-sm flex flex-col sm:flex-row gap-2 justify-center"
+      >
+        <input
+          type="email"
+          name="email"
+          id="bd-email"
+          placeholder="Enter your email"
+          class="flex-1 border border-muted-foreground/20 rounded px-3 py-2"
+          required
+        />
+        <Button
+          type="submit"
+          className="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90"
+        >
+          Subscribe
+        </Button>
+
+        <div class="hidden">
+          <a href="https://buttondown.com/refer/lbrowser" target="_blank"
+            >Powered by Buttondown</a
           >
-            Sign Up
-          </Button>
-        </form>
-      </div>
-            
-      <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
-    
-        <div class="flex items-center space-x-2">
-          <img
-            src="/internet service.svg"
-            alt="LBrowser Logo"
-            class="h-8 w-8"
-          />
-          <span class="text-lg font-semibold">LBrowser</span>
         </div>
-  
-        
-        <nav>
-          <ul class="flex flex-wrap gap-4 text-muted-foreground justify-center sm:justify-end">
-            <li><a href={isHomePage ? "#about" : "/#about"}>About</a></li>
-            <li><a href={isHomePage ? "#news" : "/#news"}>News</a></li>
-            <li><a href={isHomePage ? "#get-involved" : "/#get-involved"}>Get Involved</a></li>
-            <li><a href={isHomePage ? "#sponsors" : "/#sponsors"}>Sponsors</a></li>
-            <li><a href={isHomePage ? "#faq" : "/#faq"}>FAQ</a></li>
-            <li><a href="/docs/">Docs</a></li>
-            <li><a href="mailto:lbrowser.umpire152@passmail.net">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-  
-      
-      <hr class="border-muted-foreground/20 mb-8" />
-  
-      
-      <div class="flex justify-center space-x-4">
-        
-        <a href="#" class="text-muted-foreground hover:text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M..."/></svg>
+      </form>
+
+      <p class="text-xs text-muted-foreground mt-2">
+        <a
+          href="https://buttondown.com/refer/lbrowser"
+          target="_blank"
+          class="hover:text-primary transition-colors"
+        >
+          Powered by Buttondown
         </a>
-        <a href="#" class="text-muted-foreground hover:text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M..."/></svg>
-        </a>
-        <a href="#" class="text-muted-foreground hover:text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M..."/></svg>
-        </a>
-      </div>
+      </p>
     </div>
-  </footer>
+
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4"
+    >
+      <div class="flex items-center space-x-2">
+        <img src="/internet service.svg" alt="LBrowser Logo" class="h-8 w-8" />
+        <span class="text-lg font-semibold">LBrowser</span>
+      </div>
+
+      <nav>
+        <ul
+          class="flex flex-wrap gap-4 text-muted-foreground justify-center sm:justify-end"
+        >
+          <li><a href={isHomePage ? "#about" : "/#about"}>About</a></li>
+          <li><a href={isHomePage ? "#news" : "/#news"}>News</a></li>
+          <li>
+            <a href={isHomePage ? "#get-involved" : "/#get-involved"}
+              >Get Involved</a
+            >
+          </li>
+          <li>
+            <a href={isHomePage ? "#sponsors" : "/#sponsors"}>Sponsors</a>
+          </li>
+          <li><a href={isHomePage ? "#faq" : "/#faq"}>FAQ</a></li>
+          <li><a href="/docs/">Docs</a></li>
+          <li>
+            <a href="mailto:lbrowser.umpire152@passmail.net">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr class="border-muted-foreground/20 mb-8" />
+
+    <div class="flex justify-center space-x-4">
+      <a href="#" class="text-muted-foreground hover:text-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"><path d="M..."></path></svg
+        >
+      </a>
+      <a href="#" class="text-muted-foreground hover:text-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"><path d="M..."></path></svg
+        >
+      </a>
+      <a href="#" class="text-muted-foreground hover:text-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"><path d="M..."></path></svg
+        >
+      </a>
+    </div>
+  </div>
+</footer>
