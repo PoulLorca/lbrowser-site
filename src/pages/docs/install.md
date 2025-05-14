@@ -66,12 +66,14 @@ For developers or users who prefer to compile from source, you can build LBrowse
         * WebSocket
         * WebView
         * Positioning
+        * WebEngine Core
+        * Qt PDF
 
 **Building Process:**
 
 1.  **Clone the Repository:** Clone the LBrowser GitHub repository to your local machine.
     ```bash
-    git clone YOUR_GITHUB_REPO_LINK
+    git clone https://github.com/PoulLorca/lbrowser.git
     cd LBrowser
     ```
 2.  **Build with Maven:** The project uses Maven. Building will generate a JAR file.

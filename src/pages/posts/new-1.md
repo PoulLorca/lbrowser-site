@@ -19,6 +19,6 @@ This marks a significant first step for the project. Making this initial version
 
 We are incredibly excited about this milestone and the potential for LBrowser to help many people navigate the web more freely and safely, truly empowering them to **Go Further!**
 
-You can download the LBrowser-1.0-SNAPSHOT (PRE) from our [Download Page](/download) or directly from the [GitHub Releases](YOUR_GITHUB_RELEASE_LINK).
+You can download the LBrowser-1.0-SNAPSHOT (PRE) from our [Download Page](/lbrowser-site/download) or directly from the [GitHub Releases](https://github.com/PoulLorca/lbrowser/releases).
 
 Try it out and let us know what you think!
