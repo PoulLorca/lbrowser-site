@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
-title: LBrowser, Chromium, and Your Privacy: An Honest Look
+title: LBrowser, Chromium, and Your Privacy - An Honest Look
 pubDate: 2025-05-15
 author: Poul lorca
 tags:
