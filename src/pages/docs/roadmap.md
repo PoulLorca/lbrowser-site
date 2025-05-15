@@ -28,6 +28,7 @@ Specific developments for the 1.0 stable release include:
 
 - [ ] Developing and integrating proprietary (self-sourced/audited) Docker images for **Zeronet**.
 - [ ] Developing and integrating proprietary (self-sourced/audited) Docker images for **Tor**.
+- [ ] Keyboard mode.
 - [ ] General bug fixes and performance improvements based on pre-release feedback.
 
 The goal is to ensure the 1.0 stable release provides a solid, secure, and reliable foundation for LBrowser's unique features.
